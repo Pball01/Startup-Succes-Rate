@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="cat_round_A <= 0.5\ngini = 0.5\nsamples = 2803\nvalue = [1728, 2692]"] ;
+1 [label="cat_total_investment <= 1.5\ngini = 0.5\nsamples = 1983\nvalue = [1414, 1701]"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="cat_Continent_Name <= 3.5\ngini = 0.5\nsamples = 1033\nvalue = [1025, 602]"] ;
+1 -> 2 ;
+3 [label="gini = 0.5\nsamples = 1013\nvalue = [992, 602]"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 20\nvalue = [33, 0]"] ;
+2 -> 4 ;
+5 [label="cat_Continent_Name <= 2.5\ngini = 0.4\nsamples = 950\nvalue = [389, 1099]"] ;
+1 -> 5 ;
+6 [label="gini = 0.5\nsamples = 156\nvalue = [91, 148]"] ;
+5 -> 6 ;
+7 [label="gini = 0.4\nsamples = 794\nvalue = [298, 951]"] ;
+5 -> 7 ;
+8 [label="cat_round_E <= 0.5\ngini = 0.4\nsamples = 820\nvalue = [314, 991]"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="cat_round_B <= 0.5\ngini = 0.4\nsamples = 809\nvalue = [312, 976]"] ;
+8 -> 9 ;
+10 [label="gini = 0.4\nsamples = 485\nvalue = [246, 529]"] ;
+9 -> 10 ;
+11 [label="gini = 0.2\nsamples = 324\nvalue = [66, 447]"] ;
+9 -> 11 ;
+12 [label="cat_round_F <= 0.5\ngini = 0.2\nsamples = 11\nvalue = [2, 15]"] ;
+8 -> 12 ;
+13 [label="gini = 0.2\nsamples = 10\nvalue = [2, 13]"] ;
+12 -> 13 ;
+14 [label="gini = 0.0\nsamples = 1\nvalue = [0, 2]"] ;
+12 -> 14 ;
+}
